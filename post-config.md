@@ -122,7 +122,7 @@ Please note that the System Ruby install used by some macOS tools is still insta
 We now need to perform dotfiles configuration.
 For this we will use a tool called chezmoi.
 It should be already installed if you used the
-script [inst-brew-pkgs.sh](https://github.com/moisoto/macOS-Toolkit/blob/main/inst-brew-pkgs.sh).
+script [inst-brew-pkgs.sh](https://github.com/moisoto/macOS-dev-setup/blob/main/inst-brew-pkgs.sh).
 
 ### Initialize chezmoi with config files
 

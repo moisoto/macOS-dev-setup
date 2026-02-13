@@ -121,10 +121,10 @@ The current command is:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-After installation use the script [inst-brew-pkgs.sh](https://github.com/moisoto/macOS-Toolkit/blob/main/inst-brew-pkgs.sh) to install some useful packages:
+After installation use the script [inst-brew-pkgs.sh](https://github.com/moisoto/macOS-dev-setup/blob/main/inst-brew-pkgs.sh) to install some useful packages:
 
 ```shell
-# Run this inside the already cloned macOS-Toolkit repo
+# Run this inside the already cloned macOS-dev-setup repo
 ./inst-brew-pkgs.sh
 ```
 
@@ -143,9 +143,9 @@ After installation use the script [inst-brew-pkgs.sh](https://github.com/moisoto
 ssh-keygen -t rsa -b 4096 -C "MoiSoto's Mac Mini <moises.soto@gmail.com>"
 ```
 
-**2. Now, [configure git commit signing using gpg.](https://github.com/moisoto/macOS-Toolkit/blob/main/commit-sign.md)**
+**2. Now, [configure git commit signing using gpg.](https://github.com/moisoto/macOS-dev-setup/blob/main/commit-sign.md)**
 
-**3. Finally, let's run the provided [git-config.sh](https://github.com/moisoto/macOS-Toolkit/blob/main/git-config.sh) command:**
+**3. Finally, let's run the provided [git-config.sh](https://github.com/moisoto/macOS-dev-setup/blob/main/git-config.sh) command:**
 
 ```shell
 # Get sec key ID:

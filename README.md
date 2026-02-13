@@ -6,7 +6,7 @@ It is intended as a guide for setting up new machines.
 ## Initial Machine Setup
 
 The instructions for the initial setup of the machine is contained in
-[this document](https://github.com/moisoto/macOS-Toolkit/blob/main/initial-setup.md).
+[this document](https://github.com/moisoto/macOS-dev-setup/blob/main/initial-setup.md).
 
 Some of the software described in the following sections will be installed by following
 the instructions provided in it.
@@ -15,7 +15,7 @@ the instructions provided in it.
 
 Some of the software we installed needs additional configuration.
 I've included a separate document describing this
-[Post-Configuration](https://github.com/moisoto/macOS-Toolkit/blob/main/post-config.md) process.
+[Post-Configuration](https://github.com/moisoto/macOS-dev-setup/blob/main/post-config.md) process.
 
 ## Package Manager
 
@@ -24,7 +24,7 @@ I prefer [Homebrew](https://brew.sh) for managing packages on MacOS
 ### Homenrew Package List:
 
 These are my current setup packages. Installed as part of the
-[Initial Setup Instructions](https://github.com/moisoto/macOS-Toolkit/blob/main/initial-setup.md).
+[Initial Setup Instructions](https://github.com/moisoto/macOS-dev-setup/blob/main/initial-setup.md).
 
 * System Monitoring
   * **htop** - Improved top (interactive process viewer)
