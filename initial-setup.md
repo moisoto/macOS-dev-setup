@@ -149,10 +149,13 @@ ssh-keygen -t rsa -b 4096 -C "MoiSoto's Mac Mini <moises.soto@gmail.com>"
 
 ```shell
 # Get sec key ID:
-gpg --list-secret-keys --keyid-format LONG --with-colons | awk -F: '/^sec/ {print $5}'
+gpg --list-secret-keys --keyid-format LONG
+
+# Put your Signing-Secret-Key in a variable
+KEY="your-secret-key"
 
 # Run git-config.sh
-./git-config.sh [your-sec-key]
+./git-config.sh $KEY
 ```
 
 #### Loading Keys to Github
@@ -161,17 +164,36 @@ You can setup the SSH and GPG keys on your github account.
 The SSH Key will let you authenticate and access your repositories via ssh protocol.
 The GPG key will let you sign your commits so they appear as verified.
 
-To load the keys, go to the `Access -> SSH & GPG Keys` of your Github settings,
+To load the keys, go to the `Access -> SSH & GPG Keys` section of your Github settings,
 currently located at: [github.com/settings/keys](https://github.com/settings/keys)
 
 > **Notes:**<br>
 > You can have several SSH Keys (i.e. one per machine) loaded in a single account.<br>
 > You can't have the same SSH Key on different accounts.<br>
 > You can have several GPG Keys loaded in a single account.
+> Remember to upload a GPG Public Key with Signing capability.
+> Make sure the GPG Signing Key has an user id with a mail that corresponds to your account.
+> You can use either one of your verified mails, or the no-reply mail that github assigns to your account.
 
-### Finish configuring .zshrc
+To get your SSH public key (the one you created in step one):
+```shell
+# This will copy your public SSH Key to the clipboard:
+cat ~/.ssh/id_rsa.pub | pbcopy
+```
 
-####  Installing Utilities
+To get the public Signing GPG Key:
+```shell
+# Get the signing key ID:
+gpg --list-secret-keys --keyid-format LONG
+
+# Put it in a variable
+KEY="your-secret-key"
+
+# Export it to the clipboard
+gpg --armor --export ${KEY}! | pbcopy
+```
+
+##  Installing Utilities
 
 Clone the repo & configure:
 ```shell
@@ -182,7 +204,9 @@ cd git-utils
 ./set_aliases.sh
 ```
 
-## Intall Node.js
+## Optional Software
+
+### Install Node.js
 
 While Node.js can be installed via homebrew. It is recommended to use the [official installation method](https://nodejs.org/en/download).
 
@@ -205,7 +229,7 @@ node -v # Should print "v22.19.0".
 npm -v # Should print "10.9.3".
 ```
 
-## Install Astral's uv
+### Install Astral's uv
 
 You can use homebrew to install uv, but the [official installation method](https://github.com/astral-sh/uv?tab=readme-ov-file#installation) is the preferred way.
 
@@ -225,7 +249,7 @@ uv self update
 For more information about uv please check the [official documentation](https://docs.astral.sh/uv/) website.
 
 
-## Install Gemini-CLI
+### Install Gemini-CLI
 
 Gemini can be installed via Homebrew. However since we already have Node.js installed, it is recommended to follow the [official installation method](https://github.com/google-gemini/gemini-cli#-installation):
 
