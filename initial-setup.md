@@ -113,7 +113,7 @@ ZSH_HIGHLIGHT_STYLES[path]='fg=blue' ### MOVED TO User configuration after execu
 
 ## Installing Homebrew and Packages
 
-Intall [Homebrew](https://brew.sh/) by using the command provided in the [website](https://brew.sh/).
+Install [Homebrew](https://brew.sh/) by using the command provided in the [website](https://brew.sh/).
 
 The current command is:
 
