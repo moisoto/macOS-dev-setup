@@ -1,11 +1,11 @@
 # System Monitoring
-    brew install htop
     brew install btop
     brew install asitop
     brew install fastfetch
 
 # Misc Utils
     brew install bat
+    brew install chezmoi
     brew install eza
     brew install freetds
     brew install fzf
@@ -30,6 +30,7 @@
     brew install rbenv ruby-build
 
 # Optionals
+#    brew install htop
 #    brew install cmake
 #    brew install hyperfine
 #    brew install llama.cpp
