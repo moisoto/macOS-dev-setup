@@ -1,7 +1,7 @@
 # Post Configuration Instructions
 
-This document contains instructions to configure
-the software installed by the Initial Setup Document.
+This document contains instructions to configure the software installed by the
+[Initial Setup Document](https://github.com/moisoto/macOS-dev-setup/blob/main/initial-setup.md).
 
 ## Using uv to install Python
 
@@ -52,7 +52,6 @@ Now, add poetry to your plug in list on .zshrc script:
 ```config
 # It should look something like this:
 plugins=(dircycle wd git golang iterm2 zsh-autosuggestions zsh-syntax-highlighting poetry)
-plugins+=(gocloud)
 ```
 
 > **Note:** <br>
@@ -189,6 +188,21 @@ Now apply them:
 
 ```shell
 chezmoi apply
+```
+
+### Loading the `gocloud` Oh-My-Zsh plugin
+
+The chezmoi configuration you just applied includes a custom plugin called `gocloud`
+which I made to make easy changing to a path inside the iCloud folder.
+
+Let's modify `.zshrc` to load the `gocloud` plugin by adding it to the `plugins` variable.
+Notice I opted to specify my custom plugins in a separate line for clarity:
+
+```config
+# It should look something like this:
+plugins=(dircycle wd git golang iterm2 zsh-autosuggestions zsh-syntax-highlighting poetry)
+# My custom plugins:
+plugins+=(gocloud)
 ```
 
 ## About Rust

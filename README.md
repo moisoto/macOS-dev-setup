@@ -5,23 +5,28 @@ It is intended as a guide for setting up new machines.
 
 ## Initial Machine Setup
 
-The instructions for the initial setup of the machine is contained in
-[this document](https://github.com/moisoto/macOS-dev-setup/blob/main/initial-setup.md).
+Instructions for the initial setup of the machine are contained in the document
+[initial-setup.md](https://github.com/moisoto/macOS-dev-setup/blob/main/initial-setup.md).
 
-Some of the software described in the following sections will be installed by following
-the instructions provided in it.
+The following sections will give you an overview of the tools and programs used by this setup.
+Please review them and in case you wish to setup a new machine, follow the instructions
+on the [initial-setup.md](https://github.com/moisoto/macOS-dev-setup/blob/main/initial-setup.md)
+document.
 
 ## Software Configuration
 
-Some of the software we installed needs additional configuration.
-I've included a separate document describing this
-[Post-Configuration](https://github.com/moisoto/macOS-dev-setup/blob/main/post-config.md) process.
+Some of the software we install by following the
+[initial-setup.md](https://github.com/moisoto/macOS-dev-setup/blob/main/initial-setup.md)
+document needs additional configuration.
+
+I've included a separate [post-config.md](https://github.com/moisoto/macOS-dev-setup/blob/main/post-config.md).
+document describing this post-configuration process.
 
 ## Package Manager
 
 I prefer [Homebrew](https://brew.sh) for managing packages on MacOS
 
-### Homenrew Package List:
+### Homebrew Package List:
 
 These are my current setup packages. Installed as part of the
 [Initial Setup Instructions](https://github.com/moisoto/macOS-dev-setup/blob/main/initial-setup.md).
@@ -34,7 +39,7 @@ These are my current setup packages. Installed as part of the
 <br>
 
 * Misc Utils
-  * **bat** - Clone of cat(1) with syntax highlighting and Git integration
+  * **bat** - Clone of cat with syntax highlighting and Git integration
   * **eza** - Modern, maintained replacement for ls
   * **freetds** - Libraries to talk to Microsoft SQL Server and Sybase databases
   * **fzf** - General purpose command-line fuzzy finder

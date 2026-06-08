@@ -9,7 +9,7 @@ Follow these instructions to perform the initial setup of your recently installe
 3. Install XCode & Command Line Tools. This mainly to install git and other cli tools needed for further steps.
 
 > **Notes:**
-> The current behavior on macOS Sequoia will ask you to setup iCloud Sync (step 2).
+> The current behavior on macOS Tahoe will ask you to setup iCloud Sync (step 2).
 > Also when installing XCode it will automatically install Command Line Tools.
 
 ## Termimal Replacements & Powerups
@@ -96,19 +96,30 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
-With these now installed now change the plugins setting in your `~/.zshrc`:
+**Now let's do some modifications to our .zshrc file:**
+
+First we need to load these plugins by modifying the `plugins` variable on `.zshrc`:
 
 ```shell
 plugins=(dircycle wd git golang iterm2 zsh-autosuggestions zsh-syntax-highlighting)
 ```
 
-And add User Configuration section after the execution of $ZSH/oh-my-zsh.sh
+Let's also change syntax highlight for paths so it's shown as blue instead of underlined.
+For this we specify a new value for `ZSH_HIGHLIGHT_STYLES[path]` just after the execution
+of `$ZSH/oh-my-zsh.sh`, inside the User configuration section of `.zshrc`:
 
 ```shell
 # User configuration
 
 # To have paths colored instead of underlined
 ZSH_HIGHLIGHT_STYLES[path]='fg=blue' ### MOVED TO User configuration after execution of oh-my-zsh.sh
+```
+
+Finally, add this at the end of `.zshrc`:
+
+```shell
+# Make sure MY autocomplete rules are loaded
+autoload -U compinit && compinit
 ```
 
 ## Installing Homebrew and Packages
@@ -193,6 +204,24 @@ KEY="your-secret-key"
 gpg --armor --export ${KEY}! | pbcopy
 ```
 
+## Installing Vim-Plug
+
+In order to use plugins in vim we need to install a Plugin Manager. My favorite one is called
+[Vim-Plug](https://github.com/junegunn/vim-plug).
+
+To install it in macOS, follow the [provided instructions](https://github.com/junegunn/vim-plug#unix),
+which currently are:
+
+```shell
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+**Note:** The `.vimrc` file provided in the post configuration includes several plugins,
+in case you decide to not install Vim-Plug, please remove the lines between
+`call plug#begin` and `call plug#end()` on `.vimrc` file after you complete the
+[post configuration](https://github.com/moisoto/macOS-dev-setup/blob/main/post-config.md) instructions.
+
 ##  Installing Utilities
 
 Clone the repo & configure:
@@ -203,6 +232,8 @@ git clone git@github.com:moisoto/git-utils.git
 cd git-utils
 ./set_aliases.sh
 ```
+
+
 
 ## Optional Software
 
@@ -257,3 +288,9 @@ Gemini can be installed via Homebrew. However since we already have Node.js inst
 # Install Gemini CLI globally via npm
 npm install -g @google/gemini-cli
 ```
+
+## Post-Configuration Guide
+
+Now you have most of your programs installed. However, to get the most of them you will need to perform additional configurations.
+
+Please follow the [post-config.md](https://github.com/moisoto/macOS-dev-setup/blob/main/post-config.md) document in order to complete these final steps.
