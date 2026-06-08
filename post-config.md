@@ -205,6 +205,27 @@ plugins=(dircycle wd git golang iterm2 zsh-autosuggestions zsh-syntax-highlighti
 plugins+=(gocloud)
 ```
 
+### Installing Vim Plugins
+
+As part of the initial configuration, we [installed Vim-Plug](https://github.com/moisoto/macOS-dev-setup/blob/main/initial-setup.md#installing-vim-plug).
+Now that we loaded the `.vimrc` file using chezmoi, we need to install the actual plugins. For this we can load vim and enter the `:PlugInstall` command.
+
+Or we can do this directly from the terminal by executing:
+
+```shell
+vim +PlugInstall +'sleep 5' +qall
+```
+
+For reference, here are a few commands we can use with Vim-Plug:
+
+| Ex Command       | Description                                     |
+|------------------|-------------------------------------------------|
+| **:PlugInstall** | Install plugins loaded by your .vimrc           |
+| **:PlugStatus**  | Check status of your plugins                    |
+| **:PlugUpdate**  | Update plugins loaded by your .vimrc            |
+| **:PlugUpgrade** | Upgrades Vim-Plug itself                        |
+| **:PlugClean**   | Removes plugins no longer loaded by your .vimrc |
+
 ## About Rust
 
 In this guide I've not included rustup. However in case it's part of your toolchain, there's a few things I would clarify here.
