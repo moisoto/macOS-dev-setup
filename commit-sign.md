@@ -34,7 +34,7 @@ gpg --full-generate-key
 Select the recommended default options and you will generate a key that can be used for signing.
 When specifying the mail, make sure you use a verified mail configured in your web repository service.
 
-If you came using the link from the [Initial Setup](https://github.com/moisoto/macOS-dev-setup/blob/main/initial-setup.md)
+If you came using the link from the [Initial Setup](https://github.com/moisoto/macOS-dev-setup/blob/main/initial-setup.md#configure-git--setup-github-access)
 documentation, you will find there specific instructions for github. Otherwise keep reading for more info about how to get your public key.
 
 
