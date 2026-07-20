@@ -7,6 +7,7 @@
     brew install bat
     brew install chezmoi
     brew install eza
+    brew install fd
     brew install freetds
     brew install fzf
     brew install glow
@@ -14,6 +15,7 @@
     brew install jq
     brew install klog
     brew install pinentry-mac
+    brew install ripgrep
     brew install todo-txt
     brew install wget2
 

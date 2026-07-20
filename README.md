@@ -42,6 +42,8 @@ These are my current setup packages. Installed as part of the
   * **bat** - Clone of cat with syntax highlighting and Git integration
   * **eza** - Modern, maintained replacement for ls
   * **freetds** - Libraries to talk to Microsoft SQL Server and Sybase databases
+  * **fd** - Simple, fast and user-friendly alternative to find
+  * **ripgrep** - Search tool like grep and The Silver Searcher
   * **fzf** - General purpose command-line fuzzy finder
   * **glow** - Render markdown on the CLI
   * **gum** - Tool for glamorous shell scripts
