@@ -110,6 +110,7 @@ These are my current setup packages. Installed as part of the
 
 * [Xcode](https://developer.apple.com/xcode/)
 * [Go Language](https://go.dev/dl/)
+* [Rustup (Preferred way to install Rust on macOS)](https://rust-lang.org/tools/install/)
 * [RBENV (Preferred way to install Ruby on macOS)](https://rbenv.org)
 * [Ruby (Alternatively install via Homebrew](https://www.ruby-lang.org/en/)
 * [CocoaPods (Installed via Ruby)](https://cocoapods.org)
