@@ -101,7 +101,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 First we need to load these plugins by modifying the `plugins` variable on `.zshrc`:
 
 ```shell
-plugins=(dircycle direnv wd git golang iterm2 zsh-autosuggestions zsh-syntax-highlighting poetry colored-man-pages)
+plugins=(dircycle direnv wd git golang iterm2 poetry colored-man-pages)
+plugins+=(zsh-autosuggestions zsh-syntax-highlighting)
 ```
 
 Let's also change syntax highlight for paths so it's shown as blue instead of underlined.
