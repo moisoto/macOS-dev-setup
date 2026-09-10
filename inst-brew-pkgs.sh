@@ -6,6 +6,7 @@
 # Misc Utils
     brew install bat
     brew install chezmoi
+    brew install direnv
     brew install eza
     brew install fd
     brew install freetds
@@ -24,6 +25,7 @@
     brew install gnu-sed
 
 # Languages & Tools
+    brew install gh
     brew install poetry
     brew install hugo
     brew install mosh
@@ -41,3 +43,4 @@
 #    brew install pkgconf
 #    brew install pkl
 #    brew install tmuxinator
+#    brew install --cask codex

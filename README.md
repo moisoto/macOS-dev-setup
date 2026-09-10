@@ -40,6 +40,7 @@ These are my current setup packages. Installed as part of the
 
 * Misc Utils
   * **bat** - Clone of cat with syntax highlighting and Git integration
+  * **direnv** - Load/unload environment variables based on $PWD
   * **eza** - Modern, maintained replacement for ls
   * **freetds** - Libraries to talk to Microsoft SQL Server and Sybase databases
   * **fd** - Simple, fast and user-friendly alternative to find
@@ -142,7 +143,10 @@ These are my current setup packages. Installed as part of the
 * [Claude](https://claude.ai/download)
 * [Grok (WebApp)](https://grok.com)
 
-### Cli Tools
+### CLI Tools
 
-* [Gemini Cli](https://github.com/google-gemini/gemini-cli)
+* [GitHub CLI](https://cli.github.com)
+* [Claude Code](https://github.com/anthropics/claude-code)
+* [Gemini CLI](https://github.com/google-gemini/gemini-cli)
+* [Codex CLI](https://mintlify.wiki/openai/codex/installation)
 
