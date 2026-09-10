@@ -82,6 +82,7 @@ These are my current setup packages. Installed as part of the
   * **pkgconf** - Package compiler and linker metadata toolkit
   * **pkl** - CLI for the Pkl programming language
   * **tmuxinator** - Create and manage tmux sessions easily
+  * **apfel** - Apple Intelligence from the command-line, with OpenAi-compatible API server
 
 ## Terminal Programs
 
@@ -149,4 +150,5 @@ These are my current setup packages. Installed as part of the
 * [Claude Code](https://github.com/anthropics/claude-code)
 * [Gemini CLI](https://github.com/google-gemini/gemini-cli)
 * [Codex CLI](https://mintlify.wiki/openai/codex/installation)
+* [Apfel](https://apfel.franzai.com)
 
