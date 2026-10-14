@@ -54,6 +54,7 @@ These are my current setup packages. Installed as part of the
   * **klog** - Command-line tool for time tracking in a human-readable, plain-text file format
   * **pinentry-mac** - Pinentry for GPG on Mac
   * **chezmoi** - Dot-files manager
+  * **zoxide** - Shell extension to navigate your filesystem faster
 <br>
 
 * GNU Commands

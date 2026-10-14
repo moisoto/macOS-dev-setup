@@ -19,6 +19,7 @@
     brew install ripgrep
     brew install todo-txt
     brew install wget2
+    brew install zoxide
 
 # GNU Commands
     brew install gawk

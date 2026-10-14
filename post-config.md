@@ -200,7 +200,7 @@ Notice I opted to specify my custom plugins in a separate line for clarity:
 
 ```config
 # It should look something like this:
-plugins=(dircycle direnv wd git golang iterm2 poetry colored-man-pages)
+plugins=(dircycle direnv wd zoxide git golang iterm2 poetry colored-man-pages)
 plugins+=(zsh-autosuggestions zsh-syntax-highlighting)
 # My custom plugins:
 plugins+=(gocloud)
